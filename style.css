@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.container{
+    background-color: black;
+    padding: 20px;
+    gap: 10px;
+    display: grid;
+    height: 115vh;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 2% 5% 70% 5%;
+    grid-template-areas: 
+    "menu cabeca"
+    "menu ladoDireito"
+    "biblioteca ladoDireito"
+    "footer footer";
+}
+
+.menu{
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+          
+}
+.biblioteca{
+    grid-area: biblioteca;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #121212;
+    padding: 5px;
+    border-radius: 8px;
+    
+}
+.biblioteca p{
+    text-align: center;
+}
+.ladoDireito{
+    grid-area: ladoDireito;
+    display: grid;
+    grid-template-columns: 8fr;
+    grid-template-rows: 50%;
+    grid-template-areas: 
+    "playlistSpotfy"
+    "concentracao"
+}
+.cabeca{
+    grid-area: cabeca;
+    padding: 10PX;
+   
+}
+footer{
+    grid-area: footer;
+    background-image: linear-gradient(to right, rgb(237, 9, 226), #0b35be, #628cd5)
+}
+.inicio{
+    border-radius: 8px;
+    text-align: center;
+    background-color: #121212;
+    height: 30%;
+    margin-bottom: 5px;
+}
+.buscar{
+    border-radius: 8px;
+    padding: 3px;
+    text-align: center;
+    height: 30%;
+    background-color: #121212;
+}
+.primeiralist{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #282727;
+    height: 100px;
+}
+.podcast{
+    padding: 10px;
+    border-radius: 8px;
+    height: 100px;
+    background-color: #282727;
+}
+.buscar, .inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlistSpotfy{
+    border-radius: 8px;
+    background-color: #121212;
+    grid-area: playlistSpotfy;
+    display: grid;
+    margin: 8px;
+    grid-template-columns: 8fr;
+    grid-template-rows: 15%;
+    grid-template-areas: 
+    "tituloplay"
+    "play"
+    
+}
+.tituloplay{
+    padding: 10px;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+}
+.tituloplay p{
+    font-size: 10px;
+}
+.play{
+    padding: 10px;
+        display: flex;
+    justify-content: space-between;
+}
+.card{
+    background-color: #282727;
+    border: solid black 1px;
+    width: 160px;
+    height: 230px;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.concentracao{
+    grid-area: concentracao;
+    background-color: #121212;
+    display: grid;
+    margin: 10px;
+    grid-template-columns: 8fr;
+    grid-template-rows: 15%;
+    grid-template-areas: 
+    "tituloconcent"
+    "concent"
+}
+.concent{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.tituloconcent{
+    padding: 10px;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+}
+.tituloconcent p{
+    font-size: 10px;
+}
